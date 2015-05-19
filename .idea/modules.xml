@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/GoGoSushi.iml" filepath="$PROJECT_DIR$/GoGoSushi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RestaurantCom.iml" filepath="$PROJECT_DIR$/RestaurantCom.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/blurringview/blurringview.iml" filepath="$PROJECT_DIR$/blurringview/blurringview.iml" />
-      <module fileurl="file://$PROJECT_DIR$/lcarousel/lcarousel.iml" filepath="$PROJECT_DIR$/lcarousel/lcarousel.iml" />
       <module fileurl="file://$PROJECT_DIR$/longmenu/longmenu.iml" filepath="$PROJECT_DIR$/longmenu/longmenu.iml" />
     </modules>
   </component>
 </project>
-
