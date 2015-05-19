@@ -1,15 +1,20 @@
-package com.hkm.gogosushi;
+package com.hkm.gogosushi.main;
 
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.hkm.gogosushi.R;
+import com.hkm.gogosushi.menubig;
 import com.hkm.longmenu.Bind;
 import com.hkm.longmenu.LongMenuComponent;
 import com.hkm.longmenu.menuitem;
 
-public class MainActivity extends ActionBarActivity {
+/**
+ * Created by hesk on 5/19/2015.
+ */
+public abstract class setup extends ActionBarActivity {
     protected void setupMenu() {
         LongMenuComponent fragment_byID = (LongMenuComponent) getFragmentManager().findFragmentById(R.id.menu);
         Bind b = new Bind(80, this);
@@ -40,10 +45,12 @@ public class MainActivity extends ActionBarActivity {
 
     }
 
+    protected abstract int getLayout();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(getLayout());
         setupMenu();
         slidcontent();
     }

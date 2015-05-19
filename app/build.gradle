@@ -18,15 +18,15 @@ dependencies {
     compile 'com.yqritc:recyclerview-multiple-viewtypes-adapter:1.0.3'
     //https://android-arsenal.com/details/1/1111
     compile 'uk.co.androidalliance:edgeeffectoverride:1.0.2'
-
+    compile  'com.hkm:uieasylongmenu:0.1.0'
     compile 'fr.rolandl:carousel:1.0.1@aar'
-    compile project(':longmenu')
+    //compile project(':longmenu')
     compile project(':blurringview')
 }
 
 android {
-    compileSdkVersion 21
-    buildToolsVersion "21.1.2"
+    compileSdkVersion 22
+    buildToolsVersion "22.0.1"
 
     defaultConfig {
         applicationId "com.hkm.gogosushi"
