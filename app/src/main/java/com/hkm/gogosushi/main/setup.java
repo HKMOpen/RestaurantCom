@@ -2,11 +2,11 @@ package com.hkm.gogosushi.main;
 
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 
 import com.hkm.gogosushi.R;
-import com.hkm.gogosushi.menubig;
 import com.hkm.longmenu.Bind;
 import com.hkm.longmenu.LongMenuComponent;
 import com.hkm.longmenu.menuitem;
@@ -14,7 +14,7 @@ import com.hkm.longmenu.menuitem;
 /**
  * Created by hesk on 5/19/2015.
  */
-public abstract class setup extends ActionBarActivity {
+public abstract class setup extends AppCompatActivity {
     protected void setupMenu() {
         LongMenuComponent fragment_byID = (LongMenuComponent) getFragmentManager().findFragmentById(R.id.menu);
         Bind b = new Bind(80, this);
