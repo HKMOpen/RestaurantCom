@@ -1,6 +1,7 @@
 package com.hkm.gogosushi.modules;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -8,7 +9,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.hkm.gogosushi.R;
+import com.hkm.gogosushi.product.product;
 import com.marshalchen.ultimaterecyclerview.UltimateDifferentViewTypeAdapter;
+import com.marshalchen.ultimaterecyclerview.UltimateRecyclerviewViewHolder;
 import com.marshalchen.ultimaterecyclerview.multiViewTypes.DataBinder;
 import com.squareup.picasso.Picasso;
 
@@ -17,7 +20,7 @@ import java.util.List;
 /**
  * Created by hesk on 5/31/2015.
  */
-public class MultiClockBinder extends DataBinder<MultiClockBinder.ViewHolder> {
+public class MultiClockBinder extends DataBinder<MultiClockBinder.ViewHolder> implements View.OnClickListener {
     List<String> dataSet;
     final Picasso pica;
     final Context cc;
@@ -43,6 +46,7 @@ public class MultiClockBinder extends DataBinder<MultiClockBinder.ViewHolder> {
             String url = cc.getResources().getString(R.string.sample_coupon_url);
             holder.mTitleText.setText(title);
             pica.load(url).into(holder.mImageView);
+            holder.mImageView.setOnClickListener(this);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -53,7 +57,18 @@ public class MultiClockBinder extends DataBinder<MultiClockBinder.ViewHolder> {
         return 1;
     }
 
-    static class ViewHolder extends MultiViewTypesRecyclerViewAdapter.UltimateRecyclerviewViewHolder {
+    /**
+     * Called when a view has been clicked.
+     *
+     * @param v The view that was clicked.
+     */
+    @Override
+    public void onClick(View v) {
+        Intent intent = new Intent(cc, product.class);
+        cc.startActivity(intent);
+    }
+
+    static class ViewHolder extends UltimateRecyclerviewViewHolder {
 
         TextView mTitleText;
         ImageView mImageView;

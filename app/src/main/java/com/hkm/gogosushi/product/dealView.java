@@ -1,4 +1,4 @@
-package com.hkm.gogosushi.main;
+package com.hkm.gogosushi.product;
 
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -15,6 +15,5 @@ public class dealView extends AppCompatActivity {
         toolbar = (Toolbar) findViewById(R.id.toolbar_actionbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
-
     }
 }

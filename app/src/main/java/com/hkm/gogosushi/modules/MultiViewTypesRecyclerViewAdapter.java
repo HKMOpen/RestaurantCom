@@ -2,10 +2,10 @@ package com.hkm.gogosushi.modules;
 
 import com.hkm.gogosushi.R;
 import com.marshalchen.ultimaterecyclerview.UltimateDifferentViewTypeAdapter;
+import com.marshalchen.ultimaterecyclerview.UltimateRecyclerviewViewHolder;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
-import android.util.DisplayMetrics;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -60,7 +60,7 @@ public class MultiViewTypesRecyclerViewAdapter extends UltimateDifferentViewType
         ctxpointer = tc;
         putBinder(dataViewType.PROMOTION, new MultiPromtonBinder(this, dataSet));
         putBinder(dataViewType.CLOCK, new MultiClockBinder(this, dataSet));
-        putBinder(dataViewType.SWAP, new MultiSwapBinder(this, dataSet));
+        putBinder(dataViewType.SWAP, new MultiSweepBinder(this, dataSet));
 
         //  ((Sample2Binder) getDataBinder(dataViewType.SAMPLE2)).addAll(dataSet);
     }

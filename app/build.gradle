@@ -23,7 +23,7 @@ dependencies {
     compile 'com.android.support:support-v13:22.1.1'
     compile 'ToolBarLib:advancedtoolbar:0.2.11'
     compile 'com.hkm:advancedmaterialtabs:1.0.1@aar'
-    compile 'com.marshalchen.ultimaterecyclerview:library:0.3.4'
+    compile 'com.marshalchen.ultimaterecyclerview:library:0.3.6'
     compile project(':couponsdk')
 }
 
