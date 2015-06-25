@@ -29,7 +29,7 @@ import java.util.List;
 /**
  * Created by hesk on 4/11/2015.
  */
-public class main extends Fragment {
+public class introductions extends Fragment {
     MultiViewTypesRecyclerViewAdapter typedRecyclerViewAdapter = null;
     UltimateRecyclerView recyclerView = null;
 

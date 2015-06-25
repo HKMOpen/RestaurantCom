@@ -1,4 +1,4 @@
-package com.hkm.gogosushi.effect5;
+package com.hkm.gogosushi.pages;
 
 import android.app.ListFragment;
 import android.os.Bundle;
@@ -52,7 +52,7 @@ public class ArrayListFragment extends ListFragment {
         super.onActivityCreated(savedInstanceState);
 
         Log.d("ArrayListFragment", "onCreate");
-        adapter = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_list_item_1, efffe.CHESSES);
+        adapter = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_list_item_1, headPart.CHESSES);
         setListAdapter(adapter);
     }
 

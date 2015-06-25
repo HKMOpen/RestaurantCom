@@ -1,4 +1,4 @@
-package com.hkm.gogosushi.effect5;
+package com.hkm.gogosushi.pages;
 
 import android.app.Fragment;
 import android.app.FragmentManager;
@@ -11,9 +11,11 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
 
 import com.hkm.gogosushi.R;
+import com.ogaclejapan.smarttablayout.SmartTabLayout;
+import com.ogaclejapan.smarttablayout.utils.v13.FragmentPagerItemAdapter;
+import com.ogaclejapan.smarttablayout.utils.v13.FragmentPagerItems;
 
 import java.util.ArrayList;
 
@@ -21,7 +23,7 @@ import java.util.ArrayList;
 /**
  * Created by hesk on 4/12/2015.
  */
-public class efffe extends Fragment {
+public class headPart extends Fragment {
 
     static final int ITEMS = 10;
     ViewPager mViewPager;
@@ -32,15 +34,36 @@ public class efffe extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         CHESSES.add("Chesse0");
-        final View view = inflater.inflate(R.layout.car_efff, null);
+        final View view = inflater.inflate(R.layout.coverslider, null);
         myAdapter = new MyAdapter(getFragmentManager());
 
+
+        FragmentPagerItemAdapter adapter = new FragmentPagerItemAdapter(
+                getFragmentManager(), FragmentPagerItems.with(getActivity())
+                .add(R.string.new_tab, ArrayListFragment.class)
+                .add(R.string.outlets, ArrayListFragment.class)
+                .add(R.string.food, ArrayListFragment.class)
+                .add(R.string.beauty, ArrayListFragment.class)
+                .add(R.string.luxury, ArrayListFragment.class)
+                .add(R.string.home, ArrayListFragment.class)
+                .add(R.string.deco, ArrayListFragment.class)
+                .add(R.string.fashion, ArrayListFragment.class)
+                .add(R.string.digital, ArrayListFragment.class)
+                .add(R.string.travel, ArrayListFragment.class)
+                .add(R.string.fun, ArrayListFragment.class)
+                .add(R.string.health, ArrayListFragment.class)
+                .create());
+
         mViewPager = (ViewPager) view.findViewById(R.id.pager);
-        mViewPager.setAdapter(myAdapter);
+        mViewPager.setAdapter(adapter);
+
+        SmartTabLayout viewPagerTab = (SmartTabLayout) view.findViewById(R.id.viewpagertab);
+        viewPagerTab.setViewPager(mViewPager);
+
         return view;
     }
 
-    public void MyOnClick(View view) {
+  /*  public void MyOnClick(View view) {
         int id = view.getId();
         int position;
 
@@ -67,7 +90,7 @@ public class efffe extends Fragment {
                 myAdapter.notifyDataSetChanged();
                 break;
         }
-    }
+    }*/
 
     static class MyAdapter extends FragmentStatePagerAdapter {
         public MyAdapter(FragmentManager fm) {
