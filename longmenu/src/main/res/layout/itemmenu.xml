@@ -2,21 +2,22 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
+
     <TextView
-        android:layout_gravity="center_horizontal"
-        android:gravity="center_horizontal"
-        android:id="@+id/menuname"
+        android:id="@id/longx_menuname"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_horizontal"
         android:layout_margin="0dp"
-        android:layout_alignParentBottom="true" />
+        android:gravity="center_horizontal" />
 
     <ImageView
-        android:layout_gravity="center_horizontal"
-        android:id="@+id/itemimage"
+        android:id="@id/longx_itemimage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:scaleType="centerInside"
-        android:layout_above="@id/menuname"
-        android:padding="10dp" />
+        android:layout_above="@id/longx_menuname"
+        android:layout_gravity="center_horizontal"
+        android:padding="10dp"
+        android:scaleType="centerInside" />
 </RelativeLayout>

@@ -34,6 +34,9 @@
         <activity
             android:name=".product.product"
             android:label="Deal!" />
+        <activity
+            android:name=".scan.scanpage"
+            android:label="Deal!" />
     </application>
 
 </manifest>

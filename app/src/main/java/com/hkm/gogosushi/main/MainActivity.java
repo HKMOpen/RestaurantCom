@@ -3,6 +3,7 @@ package com.hkm.gogosushi.main;
 
 import com.hkm.gogosushi.R;
 import com.hkm.gogosushi.product.entriespage;
+import com.hkm.gogosushi.scan.scanpage;
 import com.hkm.longmenu.Bind;
 import com.hkm.longmenu.menuitem;
 
@@ -23,7 +24,7 @@ public class MainActivity extends setup {
         menu_bind.setAddListMenu(new menuitem(R.drawable.settings128, "Settings"));
         menu_bind.setAddListMenu(new menuitem(R.drawable.gift128, "Settings"));
         menu_bind.setAddListMenu(new menuitem(R.drawable.roundbubbleheart128, "Settings"));
-        menu_bind.setAddListMenu(new menuitem(R.drawable.wifi128, "Settings"));
+        menu_bind.setAddListMenu(new menuitem(R.drawable.wifi128, "Scan", scanpage.class));
     }
 
     protected int getLayout() {

@@ -7,9 +7,10 @@ import android.os.Bundle;
  * Created by hesk on 4/11/2015.
  */
 public class menuitem<activityClass extends Activity> {
+
+    private final String menuDisplayName;
     private final int ResIdCompanyLogo;
     private Class<activityClass> classIntent;
-    private final String menuDisplayName;
     private Bundle theExtraData;
 
     public menuitem(int logoId, String menuName) {
@@ -18,15 +19,12 @@ public class menuitem<activityClass extends Activity> {
     }
 
     public menuitem(int logoId, String menuName, Class<activityClass> intentClass) {
-        ResIdCompanyLogo = logoId;
-        menuDisplayName = menuName;
+        this(logoId, menuName);
         classIntent = intentClass;
     }
 
     public menuitem(int logoId, String menuName, Class<activityClass> intentClass, Bundle extras) {
-        ResIdCompanyLogo = logoId;
-        menuDisplayName = menuName;
-        classIntent = intentClass;
+        this(logoId, menuName, intentClass);
         theExtraData = extras;
     }
 

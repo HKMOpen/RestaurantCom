@@ -5,7 +5,8 @@
       <module fileurl="file://$PROJECT_DIR$/RestaurantCom.iml" filepath="$PROJECT_DIR$/RestaurantCom.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/blurringview/blurringview.iml" filepath="$PROJECT_DIR$/blurringview/blurringview.iml" />
-      <module fileurl="file://$PROJECT_DIR$/couponsdk/couponsdk.iml" filepath="$PROJECT_DIR$/couponsdk/couponsdk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/librarySDK/librarySDK.iml" filepath="$PROJECT_DIR$/librarySDK/librarySDK.iml" />
+      <module fileurl="file://$PROJECT_DIR$/longmenu/longmenu.iml" filepath="$PROJECT_DIR$/longmenu/longmenu.iml" />
     </modules>
   </component>
 </project>

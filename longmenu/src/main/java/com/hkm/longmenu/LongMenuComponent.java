@@ -47,8 +47,8 @@ public class LongMenuComponent<Text extends TextView> extends Fragment {
                     holder = (RelativeLayout) inflater.inflate(R.layout.itemmenu, null, false);
                 }
                 holder.setBackgroundResource(setting.getPattern());
-                ImageView image = (ImageView) holder.findViewById(R.id.itemimage);
-                Text textv = (Text) holder.findViewById(R.id.menuname);
+                ImageView image = (ImageView) holder.findViewById(R.id.longx_itemimage);
+                Text textv = (Text) holder.findViewById(R.id.longx_menuname);
                 // image.setMaxWidth(setting.getWidth());
                 image.setImageResource(item.getResIdCompanyLogo());
                 image.setMinimumHeight(imageportion);
@@ -70,6 +70,7 @@ public class LongMenuComponent<Text extends TextView> extends Fragment {
                                 f.putExtras(item.getTheExtraData());
                             }
                             getActivity().startActivity(f);
+                            getActivity().overridePendingTransition(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
                         }
                     });
                 }
@@ -87,7 +88,7 @@ public class LongMenuComponent<Text extends TextView> extends Fragment {
             // container.setLayoutParams(new RelativeLayout.LayoutParams(setting.getWidth(), bound.y - setting.getWidth()));
             longcontainerscoller.setLayoutParams(new RelativeLayout.LayoutParams(setting.getWidth(), bound.y - setting.getWidth()));
             RelativeLayout.LayoutParams params = (RelativeLayout.LayoutParams) longcontainerscoller.getLayoutParams();
-            params.addRule(RelativeLayout.BELOW, R.id.company_logo);
+            params.addRule(RelativeLayout.BELOW, R.id.companylogo);
             longcontainerscoller.setSmoothScrollingEnabled(true);
             longcontainerscoller.setVerticalScrollBarEnabled(false);
             container.requestLayout();
@@ -107,8 +108,8 @@ public class LongMenuComponent<Text extends TextView> extends Fragment {
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         Log.d("TAG", "onViewCreated");
-        toplogo = (ImageView) view.findViewById(R.id.company_logo);
-        holdercontainer = (RelativeLayout) view.findViewById(R.id.holder);
+        toplogo = (ImageView) view.findViewById(R.id.companylogo);
+        holdercontainer = (RelativeLayout) view.findViewById(R.id.longx_holder);
         longcontainerscoller = (ScrollView) view.findViewById(R.id.longcontainerscoller);
         container = (LinearLayout) view.findViewById(R.id.longcontainer);
     }

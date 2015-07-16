@@ -1,2 +1,1 @@
-include ':app',  ':blurringview', ':couponsdk'
-//':longmenu',
+include ':app', ':blurringview', ':librarySDK' ,':longmenu'
