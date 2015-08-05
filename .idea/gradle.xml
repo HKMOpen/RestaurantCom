@@ -5,7 +5,7 @@
       <GradleProjectSettings>
         <option name="distributionType" value="LOCAL" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="gradleHome" value="M:\installed\anstudio\gradle\gradle-2.2.1" />
+        <option name="gradleHome" value="M:\installed\anstudio\gradle\gradle-2.4" />
         <option name="gradleJvm" value="1.7" />
         <option name="modules">
           <set>
@@ -14,6 +14,7 @@
             <option value="$PROJECT_DIR$/blurringview" />
             <option value="$PROJECT_DIR$/librarySDK" />
             <option value="$PROJECT_DIR$/longmenu" />
+            <option value="$PROJECT_DIR$/order" />
           </set>
         </option>
       </GradleProjectSettings>

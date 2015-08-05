@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/blurringview/blurringview.iml" filepath="$PROJECT_DIR$/blurringview/blurringview.iml" />
       <module fileurl="file://$PROJECT_DIR$/librarySDK/librarySDK.iml" filepath="$PROJECT_DIR$/librarySDK/librarySDK.iml" />
       <module fileurl="file://$PROJECT_DIR$/longmenu/longmenu.iml" filepath="$PROJECT_DIR$/longmenu/longmenu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/order/order.iml" filepath="$PROJECT_DIR$/order/order.iml" />
     </modules>
   </component>
 </project>
